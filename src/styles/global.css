@@ -9,11 +9,11 @@ body {
 	padding: 20px;
 	max-width: 65ch;
 	text-align: left;
-	background-color: #fff;
+	background-color: var(--color-bg);
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.5;
-	color: #444;
+	color: var(--color-text);
 }
 h1,
 h2,
@@ -23,7 +23,7 @@ h5,
 h6,
 strong,
 b {
-	color: #222;
+	color: var(--bold-text);
 }
 a {
 	color: #3273dc;
@@ -49,8 +49,9 @@ img {
 	height: auto;
 }
 code {
-	padding: 2px 5px;
-	background-color: #f2f2f2;
+	padding: 10px;
+	border-radius: 0.3rem;
+	background-color: var(--code-bg);
 }
 pre {
 	padding: 1rem;
@@ -59,8 +60,8 @@ pre > code {
 	all: unset;
 }
 blockquote {
-	border: 1px solid #999;
-	color: #222;
+	border: 1px solid var(--block-quote-border);
+	color: var(--block-quote-text);
 	padding: 2px 0px 2px 20px;
 	margin: 0px;
 	font-style: italic;

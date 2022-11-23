@@ -1,11 +1,13 @@
 ---
 import HeaderLink from './HeaderLink.astro';
+import Toggle from './ThemeSwitch.astro'
 import { SITE_TITLE } from '../config';
 ---
 
 <header>
-	<h2>
+	<h2 style="display: flex; justify-content: space-between;">
 		{SITE_TITLE}
+		<Toggle />
 	</h2>
 	<nav>
 		<HeaderLink href="/">Home</HeaderLink>
