@@ -5,10 +5,10 @@ import { SITE_TITLE } from '../config';
 ---
 
 <header>
-	<h2 style="display: flex; justify-content: space-between;">
-		{SITE_TITLE}
+	<div style="display: flex; justify-content: space-between;">
+		<h2>{SITE_TITLE}</h2>
 		<Toggle />
-	</h2>
+	</div>	
 	<nav>
 		<HeaderLink href="/">Home</HeaderLink>
 		<HeaderLink href="/blog">Blog</HeaderLink>
@@ -19,7 +19,12 @@ import { SITE_TITLE } from '../config';
 </header>
 <style>
 	header {
-		margin: 0em 0 2em;
+		margin-bottom: 2rem;
+		padding-bottom: 1rem;
+		position: sticky;
+		top: 0;
+		background-color: var(--color-bg);
+		opacity: 0.9;
 	}
 	h2 {
 		margin: 0.5em 0;
